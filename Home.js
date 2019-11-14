@@ -14,6 +14,8 @@ import {
   View,
   Text,
   StatusBar,
+  Alert,
+  Platform,
 } from 'react-native';
 
 import {
@@ -25,6 +27,8 @@ import {
 } from 'react-native/Libraries/NewAppScreen';
 
 import {Avatar, Button, Icon} from 'react-native-elements';
+
+import JavaModule from './JavaModule';
 
 const Home = ({navigation}) => {
   return (
@@ -39,6 +43,19 @@ const Home = ({navigation}) => {
             title="Open profile"
             onPress={() => navigation.navigate('Profile')}
           />
+          {Platform.OS === 'android' ? (
+            <Button
+              icon={<Icon type="entypo" name="globe" size={15} color="white" />}
+              title="Get java message"
+              onPress={() =>
+                JavaModule.returnStringFromJava('Hey', result => {
+                  Alert.alert(result);
+                })
+              }
+            />
+          ) : (
+            <View />
+          )}
           <Avatar rounded icon={{name: 'home'}} />
         </ScrollView>
       </SafeAreaView>
