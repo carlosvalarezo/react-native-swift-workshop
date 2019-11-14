@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">workshop5</string>
+    <string name="title_activity_java">JavaActivity</string>
 </resources>
