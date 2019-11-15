@@ -30,6 +30,8 @@ import {Avatar, Button, Icon} from 'react-native-elements';
 
 import JavaModule from './JavaModule';
 import JavaActivityModule from './JavaActivityModule';
+import DemoModule from './DemoModule';
+import DemoActivityModule from './DemoActivityModule';
 
 const Home = ({navigation}) => {
   return (
@@ -45,7 +47,7 @@ const Home = ({navigation}) => {
             onPress={() => navigation.navigate('Profile')}
           />
           {Platform.OS === 'android' ? (
-            <View>
+            <>
               <Button
                 icon={
                   <Icon type="entypo" name="globe" size={15} color="white" />
@@ -59,13 +61,27 @@ const Home = ({navigation}) => {
               />
 
               <Button
+                title="Hola Lorenxo el gato"
+                onPress={() =>
+                  DemoModule.showMesssage('lorenxo el gato', result => {
+                    Alert.alert(result);
+                  })
+                }
+              />
+
+              <Button
+                title="Open Lorenxo el gato"
+                onPress={() => DemoActivityModule.openActivity()}
+              />
+
+              <Button
                 icon={
                   <Icon type="entypo" name="globe" size={15} color="white" />
                 }
                 title="Open android activity"
                 onPress={() => JavaActivityModule.openJavaActivity()}
               />
-            </View>
+            </>
           ) : (
             <View />
           )}

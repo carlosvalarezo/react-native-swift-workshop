@@ -27,6 +27,8 @@ public class MainApplication extends Application implements ReactApplication {
           // packages.add(new MyReactNativePackage());
             packages.add(new JavaPackage());
             packages.add(new JavaActivityPackage());
+            packages.add(new DemoPackage());
+            packages.add(new DemoActivityPackage());
           return packages;
         }
 
