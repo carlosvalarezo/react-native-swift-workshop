@@ -45,12 +45,17 @@ const Home = ({navigation}) => {
           />
           <Button
             icon={<Icon type="entypo" name="globe" size={15} color="white" />}
-            title="Open demo"
+            title="Call iOS invisible"
             onPress={() =>
               Demo.getValueFromDemo('lorenxo el gato', result =>
                 Alert.alert(result),
               )
             }
+          />
+          <Button
+            icon={<Icon type="entypo" name="globe" size={15} color="white" />}
+            title="Open iOS"
+            onPress={() => navigation.navigate('DemoView')}
           />
           <Avatar rounded icon={{name: 'home'}} />
         </ScrollView>

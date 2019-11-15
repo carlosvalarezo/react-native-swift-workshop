@@ -22,6 +22,9 @@
 		AF3D18B1AAD9285793BEA6CD /* libPods-workshop5Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A7229709711A26271AC0043B /* libPods-workshop5Tests.a */; };
 		D71CA34B237E7ACB00892E52 /* Demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71CA34A237E7ACB00892E52 /* Demo.swift */; };
 		D71CA34D237E7C2400892E52 /* Demo.m in Sources */ = {isa = PBXBuildFile; fileRef = D71CA34C237E7C2400892E52 /* Demo.m */; };
+		D71CA351237E897C00892E52 /* DemoViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71CA350237E897B00892E52 /* DemoViewManager.swift */; };
+		D71CA353237E8DD200892E52 /* DemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71CA352237E8DD200892E52 /* DemoView.swift */; };
+		D71CA359237E90C900892E52 /* DemoViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D71CA358237E90C900892E52 /* DemoViewManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +71,9 @@
 		D71CA349237E7ACB00892E52 /* workshop5-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "workshop5-Bridging-Header.h"; sourceTree = "<group>"; };
 		D71CA34A237E7ACB00892E52 /* Demo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Demo.swift; path = workshop5/Demo.swift; sourceTree = "<group>"; };
 		D71CA34C237E7C2400892E52 /* Demo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Demo.m; sourceTree = "<group>"; };
+		D71CA350237E897B00892E52 /* DemoViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoViewManager.swift; sourceTree = "<group>"; };
+		D71CA352237E8DD200892E52 /* DemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoView.swift; sourceTree = "<group>"; tabWidth = 2; };
+		D71CA358237E90C900892E52 /* DemoViewManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoViewManager.m; sourceTree = "<group>"; };
 		DA6C8E250B2356F356C74D84 /* Pods-workshop5.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-workshop5.release.xcconfig"; path = "Target Support Files/Pods-workshop5/Pods-workshop5.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
@@ -164,6 +170,9 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				D71CA358237E90C900892E52 /* DemoViewManager.m */,
+				D71CA352237E8DD200892E52 /* DemoView.swift */,
+				D71CA350237E897B00892E52 /* DemoViewManager.swift */,
 				D71CA34C237E7C2400892E52 /* Demo.m */,
 				D71CA34A237E7ACB00892E52 /* Demo.swift */,
 				13B07FAE1A68108700A75B9A /* workshop5 */,
@@ -589,9 +598,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				D71CA353237E8DD200892E52 /* DemoView.swift in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				D71CA351237E897C00892E52 /* DemoViewManager.swift in Sources */,
 				D71CA34D237E7C2400892E52 /* Demo.m in Sources */,
 				D71CA34B237E7ACB00892E52 /* Demo.swift in Sources */,
+				D71CA359237E90C900892E52 /* DemoViewManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -23,8 +23,4 @@ class Demo: NSObject {
   @objc func getValueFromDemo(_ text: String, callback: RCTResponseSenderBlock){
     callback([getValue(text)])
   }
-  
-  
-  
-  
 }
