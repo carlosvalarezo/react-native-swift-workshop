@@ -14,7 +14,11 @@ import {
   View,
   Text,
   StatusBar,
+  Alert,
+  NativeModules,
 } from 'react-native';
+
+import {Demo} from './Demo';
 
 import {
   Header,
@@ -38,6 +42,15 @@ const Home = ({navigation}) => {
             icon={<Icon type="entypo" name="globe" size={15} color="white" />}
             title="Open profile"
             onPress={() => navigation.navigate('Profile')}
+          />
+          <Button
+            icon={<Icon type="entypo" name="globe" size={15} color="white" />}
+            title="Open demo"
+            onPress={() =>
+              Demo.getValueFromDemo('lorenxo el gato', result =>
+                Alert.alert(result),
+              )
+            }
           />
           <Avatar rounded icon={{name: 'home'}} />
         </ScrollView>
