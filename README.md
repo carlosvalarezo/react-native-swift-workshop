@@ -1,4 +1,4 @@
-# workshop
+# react-native-swift-java-workshop
 
 Install the env variables, cocoapods, xcode, and android studio
 
